@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
 }
 
 android {
@@ -33,6 +34,8 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+
 }
 
 dependencies {
@@ -43,6 +46,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
